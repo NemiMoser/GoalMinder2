@@ -3,6 +3,12 @@
 # Table of Contents:
 - [User Story](#user-story)
 - [Acceptance Criteria](#acceptance-criteria)
+- [Installation Instructions](#installation-instructions)
+- [Usage Information](#usage-information)
+- [Contribution Guidelines](#contribution-guidelines)
+- [Test Instructions](#test-instructions)
+- [License](#license)
+- [Questions](#questions)
 
 ## User Story:
 AS A highly time-constrained individual,
@@ -29,3 +35,24 @@ WHEN I finish creating the goal and hit save
 THEN I will see the goal displayed on the calendar
 WHEN I want to share an event or goal
 THEN I am presented with a QR code to share via email or text
+
+## Installation Instructions
+In order to deploy the application, go to the terminal and enter "npm install”. Once that has been installed, enter “node app.js” and the server will begin.
+
+## Usage Information
+To use the application, you will need to start "node app.js" in the terminal and the apllication will be available in the server.
+
+## Contribution Guidelines
+This project illustrates the use of HTML, JavaScript, Node JS, MySQL, and npm.
+
+## Test Instructions
+Once the you visit the application, you will need to either sign up by entering your email and a password or login using your email and previously selected password.
+
+## License
+
+This project is licensed under the MIT License.
+
+## Questions
+For further questions, please reach out to me:
+- GitHub: [NemiMoser](https://github.com/NemiMoser)
+- Email: nohemi.moser@gmail.com
