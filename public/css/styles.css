@@ -1,0 +1,230 @@
+html, body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #e5d8bd;
+    color: #282119;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.box {
+    font-size: 50px;
+    font-weight: bolder;
+    background-color: #282119 !important;
+    color: #e5d8bd !important;
+    margin: 0;
+    padding: 100px;
+    text-align: center;
+}
+.box h1 {
+    color: #e5d8bd;
+    padding-bottom: 50px;
+    font-weight: bolder !important;
+}
+.subtitle,
+.subtitle strong {
+    background-color: #282119 !important;
+    color: #e5d8bd !important;
+    margin: 0;
+    text-align: center;
+}
+
+.homeButton {
+    color: #282119 !important;
+    background-color: #e5d8bd !important;
+    padding: 50px;
+}
+.dashHomeButton {
+    background-color: #282119;
+    color: #e5d8bd;
+    padding: 40px;
+    margin: 0;
+}
+.dashHomeButton h1 {
+    background-color: #282119;
+    color: #e5d8bd !important;
+    padding: 40px;
+    margin: 0;
+    font-size: 25px;
+    font-weight: bold;
+}
+.dashHomeButton h5 {
+    color: #e5d8bd !important;
+    font-size: 15px;
+    font-weight: lighter;
+}
+.qrCode img {
+    position: absolute;
+    top: 100px;
+    right: 50px;
+}
+.qrShare {
+    position: absolute;
+    top: 150px;
+    right: 50px;
+}
+.quoteSection {
+    padding-right: 300px;
+    font-style: italic;
+}
+.dashUpcomingDatesSection {
+    background-color: #e5d8bd !important;
+    font-weight: bold;
+    list-style-type: none;
+    text-align: center;
+}
+.dashUpcomingEvents,
+.dashUpcomingGoals{
+    font-weight: bold;
+    list-style-type: none;
+    text-align: center;
+}
+.dashEventsList,
+.dashGoalsList {
+    padding: 20px;
+}
+.dashAddEvent h3,
+.dashAddGoal h3 {
+    padding-left: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.dashAddEvent,
+.dashAddEvent .box {
+    color: #e5d8bd;
+    font-size: 15px;
+    padding: 10px;
+    background-color: #c97338 !important;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+}
+.dashAddGoal,
+.dashAddGoal .box {
+    color: #e5d8bd;
+    font-size: 15px;
+    padding: 10px;
+    background-color: #a54d27 !important;
+    box-shadow: 5px 5px 10px 0 rgba(0, 0, 0, 0.5);
+    border-radius: 2px;
+
+}
+.is-extra-small {
+    padding: 0px;
+    font-size: 12px;
+}
+.content,
+.logInSignUp.container {
+    padding: 0;
+    margin: 0;
+    background-color: #c97338 !important;
+    width: 100%;
+    box-sizing: border-box;
+}
+.logInSignUp .buttons {
+    padding: 50px;
+    margin: 0;
+    border: none !important;
+    background-color: #c97338 !important;
+}
+
+.inputSection {
+    padding: 20px;
+}
+
+footer {
+    font-size: 12px;
+    padding: 25px;
+    text-align: center;
+}
+
+/*Desktop*/
+@media (min-width: 1200px) {
+    .logInSignUp .buttons {
+        padding: 50px;
+        margin: 0;
+        border: none !important;
+        background-color: #c97338 !important;
+        width: 100%;
+    }
+    title h1.goalMinder {
+        font-size: 36px;
+        white-space: nowrap;
+    }
+    .qrCode img {
+        position: absolute;
+        top: 200px;
+        right: 50px;
+    }
+    .qrShare {
+        position: absolute;
+        top: 150px;
+        right: 50px;
+    }
+}
+
+/*Tablet*/
+@media (min-width: 768px) and (max-width: 1199px) {
+    .content,
+    .logInSignUp.container {
+        text-align: center;
+
+    }
+    .qrCode img {
+        position: absolute;
+        top: 200px;
+        right: 50px;
+    }
+    .qrShare {
+        position: absolute;
+        top: 150px;
+        right: 50px;
+    }
+}
+
+/*Mobile*/
+@media (min-width: 480px) and (max-width: 767px) {
+    .navbar-start,
+    .navbar-end {
+    }
+    title h1.goalMinder {
+        font-size: 24px;
+        white-space: nowrap;
+    }
+    .content,
+    .logInSignUp.container {
+        padding: 0;
+        margin: 0;
+        background-color: #c97338 !important;
+        width: 100%;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    .qrCode img {
+        position: absolute;
+        top: 10px;
+        right: 50px;
+    }
+    .qrShare {
+        position: absolute;
+        top: 150px;
+        right: 50px;
+    }
+    .quoteSection {
+        padding-right: 50px;
+        font-style: italic;
+    }
+    .dashHomeButton h1 {
+        background-color: #282119;
+        color: #e5d8bd !important;
+        padding: 50px;
+        margin: 0;
+        font-size: 25px;
+        font-weight: bold;
+    }
+    .dashHomeButton h5 {
+        color: #e5d8bd !important;
+        font-size: 15px;
+        font-weight: lighter;
+    }
+}

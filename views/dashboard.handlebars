@@ -1,0 +1,65 @@
+<div class="dashHomeButton">
+    <a href="/"><h1>GoalMinder<br><br></a>
+    Welcome</h1>
+
+    <div class="qrCode">
+        <img src="/assets/HomepageQR.png" height="125" width="125">
+            <div class="qrShare">
+                <h5>Share your GoalMinder!</h5>
+            </div>
+        </div>
+    <!-- Daily Quote Section -->
+        <div class="quoteSection">
+        <h5>The journey of a thousand miles begins with a single step.</h5>
+    </div>
+</div>
+
+<div class="dashUpcomingDatesSection">
+    <div class="dashEventsList">
+        <h3>Upcoming Events:</h3>
+            <ul class="dashUpcomingEvents">
+            </ul>
+    </div>
+
+    <div class="dashGoalsList">
+        <h3>Upcoming Goals:</h3>
+            <ul class="dashUpcomingGoals">
+            </ul>
+    </div>
+</div>
+
+<!--adding an event-->
+<!--<form action="/event/create" method="POST"></form>-->
+    <div class="title is-ancestor">
+        <div class="title is-parent is-4">
+            <article class="title is-child box is-extra-small">
+                <div class="dashAddEvent">
+                <h3>Add an event</h3>
+                <div>Name: <input type="text" id="eventName"></div><br>
+                <div>Description: <input type="text" id="eventDescription"></div><br>
+                <div>Select Date: <input type="date" id="eventDate"></div><br>
+                <div>Select Time: <input type="time" id="eventTime"></div><br>
+                <button onclick="saveEvent()">Save Event</button>
+                </div>
+            </article>
+        </div>
+
+        <!--adding a goal-->
+    <div class="title is-parent is-4">
+        <article class="title is-child box is-extra-small">
+            <div class="dashAddGoal">
+            <h3>Add a goal</h3>
+            <div>Name: <input type="text" id="goalName"></div><br>
+            <div>Description: <input type="text" id="goalDescription"></div><br>
+            <div>Select Date: <input type="date" id="goalDate"></div><br>
+            <button onclick="saveGoal()">Save Goal</button>
+            </div>
+        </article>
+    </div>
+</div>
+    <script src="/app.js"></script>
+</body>
+
+<footer>
+    <h5>Created by Daniel Zavala Lopez and Nohemi Moser. <br>All rights reserved. ©2023</h5>
+</footer>
