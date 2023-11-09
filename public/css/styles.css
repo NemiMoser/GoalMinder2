@@ -131,7 +131,7 @@ footer {
 }
 .logInSignUp .buttons {
     padding: 50px;
-    margin: 0;
+    /* margin: 0; */
     border: none !important;
     background-color: #c97338 !important;
 }
@@ -149,14 +149,13 @@ footer {
 
 /* Home Page CSS */
 .notification.is-info.is-light {
-    margin-left: -50px;
     background-color: #e5d8bd;
     color: #282119;
     max-width: fit-content;
     font-size: 3vh; 
     font-weight: bold;
     position: relative;
-    left: 50%;
+    left: 45%;
 }
 
 
@@ -178,8 +177,19 @@ footer {
 .fc .fc-button-primary:disabled {
     text-transform: uppercase;
 }
+
 .fc-theme-standard td, .fc-theme-standard th {
     border: 1px solid var(--fc-border-color) !important;
+}
+.fc .fc-button:not(:disabled) {
+    text-transform: uppercase;
+
+}
+.fc .fc-daygrid-day.fc-day-today {
+    background-color: rgb(177 153 33 / 58%) !important;
+}
+a {
+    color:#282119;
 }
 
 /*Desktop*/
@@ -205,6 +215,10 @@ footer {
         top: 150px;
         right: 50px;
     }
+    .buttons.is-flex.is-justify-content-center {
+        margin-left: 25%;
+    }
+    
 }
 
 /*Tablet*/

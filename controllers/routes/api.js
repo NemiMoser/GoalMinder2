@@ -1,8 +1,8 @@
 const express = require('express');
 const router = express.Router();
 
-const eventController = require('../controllers/eventController');
-const goalController = require('../controllers/goalController');
+const eventController = require('../eventController');
+const goalController = require('../goalController');
 
 router.get('/api/events', eventController.getAllEvents);
 router.get('/api/events/:id', eventController.getEventById);

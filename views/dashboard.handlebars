@@ -1,3 +1,4 @@
+{{#if session.loggedIn}}
 <div class="dashHomeButton">
     {{!-- Welcome Message --}}
     <div>
@@ -64,4 +65,23 @@
         </article>
     </div>
 </div>
+{{else}}
+<div class="block">
+    <div class="box">
+    You will need to login or signup before continuing ...
+    </div>
+    <div class="logInSignUp container" style="">
+        <div class="title is-parent">
+            <article>
+                <div class="buttons is-flex is-justify-content-center">
+                    <a class="button is-primary" href="/register">Sign Up</a>
+                    <a class="button is-light" href="/login">Log In</a>
+                </div>
+            </article>
+        </div>
+    </div>
+</div>
+{{/if}}
+
+
 

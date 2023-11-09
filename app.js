@@ -2,11 +2,14 @@ const express = require('express');
 const session = require('express-session');
 const expressHandlebars = require('express-handlebars');
 const path = require('path');
+const SequelizeStore = require('connect-session-sequelize')(session.Store);
+
 const eventController = require('./controllers/eventController');
 const goalController = require('./controllers/goalController');
 const sequelize = require('./config/connection');
-const SequelizeStore = require('connect-session-sequelize')(session.Store);
 const User = require('./models/User');
+
+
 
 const app = express();
 
@@ -36,12 +39,12 @@ app.use(express.json());
 
 
 // Authentication routes
-const authRoutes = require('./routes/auth');
+const authRoutes = require('./controllers/routes/auth');
 app.use('/', authRoutes);
 
 // Routes for events and goals (you can define these routes)
-const eventRoutes = require('./routes/event');
-const goalRoutes = require('./routes/goal');
+const eventRoutes = require('./controllers/routes/event');
+const goalRoutes = require('./controllers/routes/goal');
 app.use('/event', eventRoutes); // Prefix for event routes
 app.use('/goal', goalRoutes);  // Prefix for goal routes
 

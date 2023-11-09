@@ -1,7 +1,2 @@
 DROP DATABASE IF EXISTS goal_db;
 CREATE DATABASE goal_db;
-
-CREATE TABLE users (
-    id INT PRIMARY KEY,
-    user_email VARCHAR(255) NOT NULL
-);
