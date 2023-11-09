@@ -16,15 +16,15 @@ function signUp() {
         signupStatus.innerHTML = data.message;
     })
     .catch(error => {
-        console.error('Error:', error);
+        console.error('Error within signup:', error);
     });
 }
 
 //sign in function
 function signIn() {
-    var email = document.getElementById("email").value;
-    var password = document.getElementById("password").value;
-
+    var email = document.getElementById("email").value; //gets email input from form
+    var password = document.getElementById("password").value; // gets password input from form
+    //sends a post request 
     fetch('/login', {
         method: 'POST',
         headers: {
@@ -42,7 +42,7 @@ function signIn() {
         }
     })
     .catch(error => {
-        console.error('Error:', error);
+        console.error('Error within login:', error);
     });
 }
 
@@ -63,6 +63,6 @@ function logout() {
         }
     })
     .catch(error => {
-        console.error('Error:', error);
+        console.error('Error within logout:', error);
     });
 }

@@ -2,13 +2,10 @@ const express = require('express');
 const session = require('express-session');
 const expressHandlebars = require('express-handlebars');
 const path = require('path');
-
 const eventController = require('./controllers/eventController');
 const goalController = require('./controllers/goalController');
-
 const sequelize = require('./config/connection');
 const SequelizeStore = require('connect-session-sequelize')(session.Store);
-
 const User = require('./models/User');
 
 const app = express();
@@ -37,11 +34,6 @@ app.set('view engine', 'handlebars');
 app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 
-// Serve CSS
-app.get('/assets/css/style.css', (req, res) => {
-  res.type('text/css');
-  res.sendFile(path.join(__dirname, 'public', 'assets', 'css', 'styles.css'));
-});
 
 // Authentication routes
 const authRoutes = require('./routes/auth');
