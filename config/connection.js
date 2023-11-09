@@ -1,29 +1,22 @@
 const Sequelize = require('sequelize');
 require('dotenv').config();
 
-let sequelize;
-
-if (process.env.JAWSDB_URL) {
-  sequelize = new Sequelize(process.env.JAWSDB_URL, {logging: console.log,
-  });
-  sequelize.options.logging = console.log;
-} else {
-  sequelize = new Sequelize(
-    process.env.DB_NAME,
-    process.env.DB_USER,
-    process.env.DB_PASSWORD,
-    {
+// create connection to our db
+const sequelize = process.env.JAWSDB_URL
+  ? new Sequelize(process.env.JAWSDB_URL)
+  : new Sequelize(process.env.DB_NAME, process.env.DB_USER, process.env.DB_PASSWORD, {
       host: 'localhost',
       dialect: 'mysql',
       port: 3306
-    }
-  );
-}
+    });
 
+// logging db name / user / password
 console.log('DB_NAME:', process.env.DB_NAME);
 console.log('DB_USER:', process.env.DB_USER);
 console.log('DB_PASSWORD:', process.env.DB_PASSWORD);
 
+
+// making sure that connection is established
 sequelize
   .authenticate()
   .then(() => {
