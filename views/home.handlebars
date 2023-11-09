@@ -1,17 +1,22 @@
 
-  
-    <div class="title is-ancestor">
-    <div class="title is-parent is-4">
-      <article class="title is-child box">
-          <a class="goalMinder" href="/"><h1>GoalMinder</h1></a>
-      <div class="subtitle">
-        <strong>A unified platform</strong> for seamlessly organizing, monitoring, and sharing both events and goals
-        </div>
-      </article>
+<div class="title is-ancestor">
+    <div class="title is-parent is-4 box">
+        <article class="title is-child ">
+            <a class="goalMinder" href="/">
+                <h1>GoalMinder</h1>
+            </a>
+            <div class="subtitle">
+                <strong>A unified platform</strong> for seamlessly organizing, monitoring, and sharing both events and goals
+            </div>
+        </article>
     </div>
-  </div>
+</div>
 
   {{#if session.loggedIn}}
+  <div id="notification" class="notification is-info is-light">
+    <button onclick="deleteDiv()" class="delete"></button>
+    You are currently logged in !
+  </div>
   {{else}}
   <div class="logInSignUp container">
   <div class="title is-parent">
@@ -24,3 +29,5 @@
   </div>
 </div>
 {{/if}}
+
+  <div id="calendar"></div>
