@@ -1,6 +1,6 @@
 const express = require('express');
 const router = express.Router();
-const goalController = require('../controllers/goalController');
+const goalController = require('../goalController');
 
 router.get('/api/goals', goalController.getAllGoals);
 router.post('/api/goals', goalController.createGoal);
